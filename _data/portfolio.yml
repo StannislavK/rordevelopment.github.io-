@@ -1,0 +1,79 @@
+- id: ecommerce
+  icon: ti-shopping-cart
+  color: blue
+  en:
+    title: E-commerce Platform
+    tags: [Ruby on Rails, MySQL, Redis, Sidekiq]
+    desc: A multi-vendor online store with a product catalog of 50,000+ items, order management, payment gateway integrations, and an admin panel for content management. Includes automated email notifications and a loyalty system.
+  ua:
+    title: E-commerce платформа
+    tags: [Ruby on Rails, MySQL, Redis, Sidekiq]
+    desc: Багатовендорний інтернет-магазин з каталогом понад 50 000 товарів, управлінням замовленнями, інтеграцією платіжних систем та адмін-панеллю. Автоматичні email-сповіщення та система лояльності.
+  de:
+    title: E-Commerce-Plattform
+    tags: [Ruby on Rails, MySQL, Redis, Sidekiq]
+    desc: Ein Multi-Vendor-Onlineshop mit über 50.000 Produkten, Auftragsverwaltung, Zahlungsintegration und Admin-Panel. Automatisierte E-Mail-Benachrichtigungen und ein Treueprogramm.
+  ru:
+    title: E-commerce платформа
+    tags: [Ruby on Rails, MySQL, Redis, Sidekiq]
+    desc: Мультивендорный интернет-магазин с каталогом более 50 000 товаров, управлением заказами, интеграцией платёжных систем и админ-панелью. Автоматические email-уведомления и система лояльности.
+
+- id: vending
+  icon: ti-droplet
+  color: teal
+  en:
+    title: Vending Machine Software
+    tags: [Ruby, IoT, REST API, PostgreSQL]
+    desc: Custom software for a network of drinking water vending machines. Real-time monitoring, remote management, sales analytics, and automated maintenance alerts. Integration with payment terminals and mobile app for end users.
+  ua:
+    title: ПЗ для вендингових автоматів
+    tags: [Ruby, IoT, REST API, PostgreSQL]
+    desc: Програмне забезпечення для мережі вендингових автоматів з питною водою. Моніторинг в реальному часі, дистанційне управління, аналітика продажів та сповіщення про обслуговування. Інтеграція з платіжними терміналами і мобільним додатком.
+  de:
+    title: Vending-Automaten-Software
+    tags: [Ruby, IoT, REST API, PostgreSQL]
+    desc: Individuelle Software für ein Netzwerk von Trinkwasser-Automaten. Echtzeit-Monitoring, Fernsteuerung, Verkaufsanalyse und automatische Wartungsmeldungen. Integration mit Zahlungsterminals und mobiler App.
+  ru:
+    title: ПО для вендинговых автоматов
+    tags: [Ruby, IoT, REST API, PostgreSQL]
+    desc: Программное обеспечение для сети вендинговых автоматов с питьевой водой. Мониторинг в реальном времени, удалённое управление, аналитика продаж и уведомления об обслуживании. Интеграция с платёжными терминалами и мобильным приложением.
+
+- id: mobile
+  icon: ti-device-mobile
+  color: purple
+  en:
+    title: Mobile Application
+    tags: [React Native, Ruby on Rails API, PostgreSQL]
+    desc: Cross-platform mobile app with user authentication, real-time notifications, offline mode, and integration with an existing web platform. Published on App Store and Google Play.
+  ua:
+    title: Мобільний додаток
+    tags: [React Native, Ruby on Rails API, PostgreSQL]
+    desc: Кросплатформний мобільний додаток з авторизацією, push-сповіщеннями, офлайн-режимом та інтеграцією з існуючою веб-платформою. Опублікований в App Store та Google Play.
+  de:
+    title: Mobile Anwendung
+    tags: [React Native, Ruby on Rails API, PostgreSQL]
+    desc: Plattformübergreifende mobile App mit Authentifizierung, Echtzeit-Benachrichtigungen, Offline-Modus und Integration mit einer bestehenden Webplattform. Veröffentlicht im App Store und Google Play.
+  ru:
+    title: Мобильное приложение
+    tags: [React Native, Ruby on Rails API, PostgreSQL]
+    desc: Кроссплатформенное мобильное приложение с авторизацией, push-уведомлениями, офлайн-режимом и интеграцией с существующей веб-платформой. Опубликовано в App Store и Google Play.
+
+- id: redmine
+  icon: ti-tool
+  color: amber
+  en:
+    title: Redmine Migration & Upgrade
+    tags: [Redmine, Ruby, MySQL, DevOps]
+    desc: Full migration and upgrade of a Redmine installation with 300GB+ database from version 2.x to the latest. Zero data loss, preserved all custom plugins and workflows. Completed within one month including testing.
+  ua:
+    title: Міграція та оновлення Redmine
+    tags: [Redmine, Ruby, MySQL, DevOps]
+    desc: Повна міграція та оновлення Redmine з базою 300+ ГБ з версії 2.x до актуальної. Без втрати даних, зі збереженням всіх плагінів і налаштувань. Виконано за місяць включно з тестуванням.
+  de:
+    title: Redmine-Migration & Upgrade
+    tags: [Redmine, Ruby, MySQL, DevOps]
+    desc: Vollständige Migration und Upgrade einer Redmine-Installation mit 300 GB+ Datenbank von Version 2.x auf die aktuelle Version. Kein Datenverlust, alle Plugins und Workflows erhalten. Abgeschlossen in einem Monat.
+  ru:
+    title: Миграция и обновление Redmine
+    tags: [Redmine, Ruby, MySQL, DevOps]
+    desc: Полная миграция и обновление Redmine с базой 300+ ГБ с версии 2.x до актуальной. Без потери данных, с сохранением всех плагинов и настроек. Выполнено за месяц включая тестирование.

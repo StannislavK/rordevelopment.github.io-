@@ -1,0 +1,107 @@
+---
+layout: default
+lang: de
+permalink: /de/
+title: Webentwicklung & Software
+description: Ruby on Rails, PHP, mobile Apps, CRM/ERP-Systeme und Server-Management. Erfahrenes Remote-Team, transparenter Prozess.
+---
+
+{% assign t = site.data.translations.de %}
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow"><i class="ti ti-code"></i> Software-Entwicklungsagentur</div>
+    <h1>Softwareentwicklung<br><span>die Ergebnisse liefert</span></h1>
+    <p class="hero-sub">Ruby on Rails, PHP, mobile Apps, CRM/ERP-Systeme und Server-Infrastruktur. Remote-Team, bewährte Expertise, transparenter Prozess.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary"><i class="ti ti-send"></i> Projekt besprechen</a>
+      <a href="#portfolio" class="btn-secondary"><i class="ti ti-briefcase"></i> Portfolio ansehen</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="services">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Leistungen</span>
+      <h2 class="section-title">{{ t.services.title }}</h2>
+    </div>
+    <div class="services-grid">
+      {% for s in t.services.list %}
+      <div class="service-card">
+        <div class="service-icon"><i class="ti {{ s.icon }}" aria-hidden="true"></i></div>
+        <h3>{{ s.title }}</h3>
+        <p>{{ s.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="portfolio">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Unsere Arbeit</span>
+      <h2 class="section-title">{{ t.portfolio.title }}</h2>
+      <p class="section-sub">{{ t.portfolio.subtitle }}</p>
+    </div>
+    <div class="portfolio-grid">
+      {% for p in site.data.portfolio %}
+      <div class="portfolio-card">
+        <div class="portfolio-icon-wrap {{ p.color }}"><i class="ti {{ p.icon }}" aria-hidden="true"></i></div>
+        <h3>{{ p.de.title }}</h3>
+        <p>{{ p.de.desc }}</p>
+        <div class="tags">{% for tag in p.de.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="blog">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Einblicke</span>
+      <h2 class="section-title">{{ t.blog.title }}</h2>
+      <p class="section-sub">{{ t.blog.subtitle }}</p>
+    </div>
+    <div class="blog-placeholder">
+      <i class="ti ti-writing" aria-hidden="true"></i>
+      <p>Artikel erscheinen in Kürze.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>{{ t.contact.title }}</h2>
+        <p>{{ t.contact.subtitle }}</p>
+        <div class="contact-links">
+          <a href="mailto:{{ site.contact_email }}" class="contact-link">
+            <div class="contact-link-icon"><i class="ti ti-mail" aria-hidden="true"></i></div>
+            {{ site.contact_email }}
+          </a>
+          <a href="https://t.me/{{ site.telegram }}" target="_blank" class="contact-link">
+            <div class="contact-link-icon"><i class="ti ti-brand-telegram" aria-hidden="true"></i></div>
+            @{{ site.telegram }}
+          </a>
+        </div>
+      </div>
+      <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-group">
+          <label for="email">{{ t.contact.email_label }}</label>
+          <input type="email" id="email" name="email" placeholder="ihre@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">{{ t.contact.message_label }}</label>
+          <textarea id="message" name="message" placeholder="{{ t.contact.message_placeholder }}" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
+          <i class="ti ti-send"></i> {{ t.contact.send }}
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,239 @@
+en:
+  nav:
+    services: Services
+    portfolio: Portfolio
+    blog: Blog
+    contact: Contact
+  hero:
+    title: "Software Development<br><span>That Delivers Results</span>"
+    subtitle: "Ruby on Rails, PHP, mobile apps, CRM/ERP systems and server infrastructure. Remote team, proven expertise, transparent process."
+    cta: Discuss your project
+  services:
+    title: What we do
+    list:
+      - icon: ti-code
+        title: Ruby on Rails
+        desc: Development and improvement of projects of any complexity. From MVP to enterprise.
+      - icon: ti-layers
+        title: MVP Launch
+        desc: Fast product launch to test your idea on the market with minimal investment.
+      - icon: ti-brand-php
+        title: PHP Development
+        desc: Laravel, Yii2 and other frameworks. API, integrations, complex business logic.
+      - icon: ti-device-mobile
+        title: Mobile & Web Apps
+        desc: Full-cycle development of web applications and mobile solutions.
+      - icon: ti-building
+        title: CRM & ERP Systems
+        desc: Custom business automation systems tailored to your processes.
+      - icon: ti-layout
+        title: Website Creation
+        desc: Landing pages, corporate websites, e-commerce. Clean code, no unnecessary plugins.
+      - icon: ti-chart-arrows
+        title: Project Management
+        desc: Managing development of websites and web applications from brief to launch.
+      - icon: ti-server
+        title: Server Management
+        desc: Setup, migration and maintenance of infrastructure of any complexity.
+      - icon: ti-brush
+        title: UI/UX Design
+        desc: Interface design by verified specialists hired per project.
+      - icon: ti-users
+        title: IT HR & Outstaffing
+        desc: Providing developers from our pool for your team. Developer screening for partners.
+  portfolio:
+    title: Portfolio
+    subtitle: Selected projects. Details under NDA upon request.
+  blog:
+    title: Blog
+    subtitle: Technical articles, case studies and insights from our team.
+  contact:
+    title: Get in touch
+    subtitle: Tell us about your project — we respond within one business day.
+    email_label: Email
+    message_label: Message
+    message_placeholder: Describe your task or idea...
+    send: Send message
+    or: or write to us directly
+  footer:
+    rights: All rights reserved.
+
+ua:
+  nav:
+    services: Послуги
+    portfolio: Портфоліо
+    blog: Блог
+    contact: Контакти
+  hero:
+    title: "Розробка програмного<br><span>забезпечення під ключ</span>"
+    subtitle: "Ruby on Rails, PHP, мобільні додатки, CRM/ERP системи та серверна інфраструктура. Команда з досвідом, прозорий процес."
+    cta: Обговорити проект
+  services:
+    title: Що ми робимо
+    list:
+      - icon: ti-code
+        title: Ruby on Rails
+        desc: Розробка та доопрацювання проектів будь-якої складності. Від MVP до enterprise.
+      - icon: ti-layers
+        title: Запуск MVP
+        desc: Швидкий вихід на ринок для перевірки ідеї з мінімальними інвестиціями.
+      - icon: ti-brand-php
+        title: PHP розробка
+        desc: Laravel, Yii2 та інші фреймворки. API, інтеграції, складна бізнес-логіка.
+      - icon: ti-device-mobile
+        title: Мобільні та веб-додатки
+        desc: Розробка веб-застосунків і мобільних рішень повного циклу.
+      - icon: ti-building
+        title: CRM та ERP системи
+        desc: Системи автоматизації бізнесу під конкретні процеси вашої компанії.
+      - icon: ti-layout
+        title: Створення сайтів
+        desc: Лендинги, корпоративні сайти, інтернет-магазини. Чистий код без зайвих плагінів.
+      - icon: ti-chart-arrows
+        title: Управління проектом
+        desc: Ведення розробки від брифу до запуску. Прозоро і в строк.
+      - icon: ti-server
+        title: Сервери та DevOps
+        desc: Налаштування, міграція та підтримка інфраструктури будь-якої складності.
+      - icon: ti-brush
+        title: UI/UX Дизайн
+        desc: Дизайн інтерфейсів від перевірених спеціалістів під конкретний проект.
+      - icon: ti-users
+        title: IT HR та Аутсорс
+        desc: Надаємо розробників з нашої бази. Скринінг розробників для партнерів.
+  portfolio:
+    title: Портфоліо
+    subtitle: Вибрані проекти. Деталі під NDA за запитом.
+  blog:
+    title: Блог
+    subtitle: Технічні статті, кейси та інсайти від нашої команди.
+  contact:
+    title: Зв'яжіться з нами
+    subtitle: Розкажіть про проект — відповімо протягом одного робочого дня.
+    email_label: Email
+    message_label: Повідомлення
+    message_placeholder: Опишіть вашу задачу або ідею...
+    send: Надіслати
+    or: або напишіть нам напряму
+  footer:
+    rights: Всі права захищені.
+
+de:
+  nav:
+    services: Leistungen
+    portfolio: Portfolio
+    blog: Blog
+    contact: Kontakt
+  hero:
+    title: "Softwareentwicklung<br><span>die Ergebnisse liefert</span>"
+    subtitle: "Ruby on Rails, PHP, mobile Apps, CRM/ERP-Systeme und Server-Infrastruktur. Remote-Team, bewährte Expertise, transparenter Prozess."
+    cta: Projekt besprechen
+  services:
+    title: Was wir tun
+    list:
+      - icon: ti-code
+        title: Ruby on Rails
+        desc: Entwicklung und Erweiterung von Projekten jeder Komplexität. Von MVP bis Enterprise.
+      - icon: ti-layers
+        title: MVP-Launch
+        desc: Schneller Markteinstieg zur Validierung Ihrer Idee mit minimalem Aufwand.
+      - icon: ti-brand-php
+        title: PHP-Entwicklung
+        desc: Laravel, Yii2 und andere Frameworks. APIs, Integrationen, komplexe Geschäftslogik.
+      - icon: ti-device-mobile
+        title: Mobile & Web Apps
+        desc: Vollständige Entwicklung von Web-Anwendungen und mobilen Lösungen.
+      - icon: ti-building
+        title: CRM & ERP Systeme
+        desc: Individuelle Business-Automatisierung für Ihre spezifischen Prozesse.
+      - icon: ti-layout
+        title: Website-Erstellung
+        desc: Landingpages, Unternehmenswebsites, E-Commerce. Sauberer Code, keine unnötigen Plugins.
+      - icon: ti-chart-arrows
+        title: Projektmanagement
+        desc: Steuerung der Entwicklung vom Briefing bis zum Launch.
+      - icon: ti-server
+        title: Server & DevOps
+        desc: Einrichtung, Migration und Wartung von Infrastruktur jeder Komplexität.
+      - icon: ti-brush
+        title: UI/UX Design
+        desc: Interface-Design durch geprüfte Spezialisten je nach Projekt.
+      - icon: ti-users
+        title: IT HR & Outstaffing
+        desc: Entwickler aus unserem Pool für Ihr Team. Entwickler-Screening für Partner.
+  portfolio:
+    title: Portfolio
+    subtitle: Ausgewählte Projekte. Details unter NDA auf Anfrage.
+  blog:
+    title: Blog
+    subtitle: Technische Artikel, Fallstudien und Einblicke von unserem Team.
+  contact:
+    title: Kontakt aufnehmen
+    subtitle: Erzählen Sie uns von Ihrem Projekt — wir antworten innerhalb eines Werktages.
+    email_label: E-Mail
+    message_label: Nachricht
+    message_placeholder: Beschreiben Sie Ihre Aufgabe oder Idee...
+    send: Nachricht senden
+    or: oder schreiben Sie uns direkt
+  footer:
+    rights: Alle Rechte vorbehalten.
+
+ru:
+  nav:
+    services: Услуги
+    portfolio: Портфолио
+    blog: Блог
+    contact: Контакты
+  hero:
+    title: "Разработка программного<br><span>обеспечения под ключ</span>"
+    subtitle: "Ruby on Rails, PHP, мобильные приложения, CRM/ERP системы и серверная инфраструктура. Команда с опытом, прозрачный процесс."
+    cta: Обсудить проект
+  services:
+    title: Что мы делаем
+    list:
+      - icon: ti-code
+        title: Ruby on Rails
+        desc: Разработка и доработка проектов любой сложности. От MVP до enterprise.
+      - icon: ti-layers
+        title: Запуск MVP
+        desc: Быстрый выход на рынок для проверки идеи с минимальными инвестициями.
+      - icon: ti-brand-php
+        title: PHP разработка
+        desc: Laravel, Yii2 и другие фреймворки. API, интеграции, сложная бизнес-логика.
+      - icon: ti-device-mobile
+        title: Мобильные и веб-приложения
+        desc: Разработка веб-приложений и мобильных решений полного цикла.
+      - icon: ti-building
+        title: CRM и ERP системы
+        desc: Системы автоматизации бизнеса под конкретные процессы вашей компании.
+      - icon: ti-layout
+        title: Создание сайтов
+        desc: Лендинги, корпоративные сайты, интернет-магазины. Чистый код без лишних плагинов.
+      - icon: ti-chart-arrows
+        title: Управление проектом
+        desc: Ведение разработки от брифа до запуска. Прозрачно и в срок.
+      - icon: ti-server
+        title: Серверы и DevOps
+        desc: Настройка, миграция и поддержка инфраструктуры любой сложности.
+      - icon: ti-brush
+        title: UI/UX Дизайн
+        desc: Дизайн интерфейсов от проверенных специалистов под конкретный проект.
+      - icon: ti-users
+        title: IT HR и Аутсорс
+        desc: Предоставляем разработчиков из нашей базы. Скрининг разработчиков для партнёров.
+  portfolio:
+    title: Портфолио
+    subtitle: Избранные проекты. Детали под NDA по запросу.
+  blog:
+    title: Блог
+    subtitle: Технические статьи, кейсы и инсайты от нашей команды.
+  contact:
+    title: Свяжитесь с нами
+    subtitle: Расскажите о проекте — ответим в течение одного рабочего дня.
+    email_label: Email
+    message_label: Сообщение
+    message_placeholder: Опишите вашу задачу или идею...
+    send: Отправить
+    or: или напишите нам напрямую
+  footer:
+    rights: Все права защищены.

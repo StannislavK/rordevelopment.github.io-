@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {% seo %}
+</head>
+<body>
+  {% assign t = site.data.translations[page.lang] %}
+  {% assign lang = page.lang | default: 'en' %}
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="{{ '/' | relative_url }}" class="nav-logo">
+        <span class="logo-mark">R</span>
+        <span class="logo-text">ROR Development</span>
+      </a>
+      <div class="nav-links">
+        <a href="#services">{{ t.nav.services }}</a>
+        <a href="#portfolio">{{ t.nav.portfolio }}</a>
+        <a href="#blog">{{ t.nav.blog }}</a>
+        <a href="#contact">{{ t.nav.contact }}</a>
+      </div>
+      <div class="lang-switcher">
+        <a href="/en/" class="lang-btn {% if lang == 'en' %}active{% endif %}">EN</a>
+        <a href="/ua/" class="lang-btn {% if lang == 'ua' %}active{% endif %}">UA</a>
+        <a href="/de/" class="lang-btn {% if lang == 'de' %}active{% endif %}">DE</a>
+        <a href="/ru/" class="lang-btn {% if lang == 'ru' %}active{% endif %}">RU</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <i class="ti ti-menu-2"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-mark">R</span>
+        <span class="logo-text">ROR Development</span>
+      </div>
+      <p class="footer-copy">© {{ 'now' | date: '%Y' }} ROR Development. {{ t.footer.rights }}</p>
+      <div class="footer-social">
+        <a href="mailto:{{ site.contact_email }}" aria-label="Email">
+          <i class="ti ti-mail"></i>
+        </a>
+        <a href="https://t.me/{{ site.telegram }}" target="_blank" aria-label="Telegram">
+          <i class="ti ti-brand-telegram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
