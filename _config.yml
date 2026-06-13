@@ -1,7 +1,7 @@
 title: ROR Development
 description: Web development agency — Ruby on Rails, PHP, Mobile Apps, CRM/ERP
-url: "https://ror-development.com"
-baseurl: ""
+url: "https://stannislavk.github.io"
+baseurl: "/rordevelopment.github.io-"
 
 contact_email: contact@ror-development.com
 telegram: rordevelopment
@@ -10,7 +10,6 @@ languages: [en, ua, de, ru]
 default_lang: en
 
 markdown: kramdown
-permalink: /:lang/:slug/
 
 plugins:
   - jekyll-sitemap
@@ -20,3 +19,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - vendor
