@@ -28,11 +28,11 @@
         <a href="#contact">{{ t.nav.contact }}</a>
       </div>
       <div class="lang-switcher">
-        <a href="/en/" class="lang-btn {% if lang == 'en' %}active{% endif %}">EN</a>
-        <a href="/ua/" class="lang-btn {% if lang == 'ua' %}active{% endif %}">UA</a>
-        <a href="/de/" class="lang-btn {% if lang == 'de' %}active{% endif %}">DE</a>
-        <a href="/ru/" class="lang-btn {% if lang == 'ru' %}active{% endif %}">RU</a>
-      </div>
+  <a href="{{ site.baseurl }}/en/" class="lang-btn {% if lang == 'en' %}active{% endif %}">EN</a>
+  <a href="{{ site.baseurl }}/ua/" class="lang-btn {% if lang == 'ua' %}active{% endif %}">UA</a>
+  <a href="{{ site.baseurl }}/de/" class="lang-btn {% if lang == 'de' %}active{% endif %}">DE</a>
+  <a href="{{ site.baseurl }}/ru/" class="lang-btn {% if lang == 'ru' %}active{% endif %}">RU</a>
+</div>
       <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <i class="ti ti-menu-2"></i>
       </button>
