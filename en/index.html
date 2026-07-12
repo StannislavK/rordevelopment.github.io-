@@ -86,7 +86,8 @@ description: Ruby on Rails, PHP, mobile apps, CRM/ERP systems and server managem
     </div>
     {% if site.posts.size > 0 %}
     <div class="blog-grid">
-      {% for post in site.posts limit:3 %}
+      {% assign en_posts = site.posts | where: "lang", "en" %}
+      {% for post in en_posts limit:3 %}
       <a href="{{ post.url }}" class="blog-card">
         <div class="blog-date">{{ post.date | date: "%B %d, %Y" }}</div>
         <h3>{{ post.title }}</h3>
