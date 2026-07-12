@@ -1,0 +1,49 @@
+---
+layout: default
+lang: ru
+title: "Настройка, миграция и кастомизация Redmine: практическое руководство"
+description: "Redmine — один из самых мощных инструментов управления проектами с открытым кодом. Узнайте об установке, плагинах, миграции и настройке."
+date: 2025-07-10
+---
+
+<article class="section">
+  <div class="container" style="max-width: 760px;">
+    <div style="margin-bottom: 40px;">
+      <span class="section-label">Блог</span>
+      <h1 style="font-size: clamp(26px, 4vw, 38px); font-weight: 300; color: var(--gray-900); margin: 12px 0 16px; letter-spacing: -0.02em; line-height: 1.3;">Настройка, миграция и кастомизация Redmine: практическое руководство</h1>
+      <div style="display:flex; gap: 16px; align-items: center;">
+        <span style="color: var(--gray-400); font-size: 13px; font-family: var(--font-mono);">10.07.2025</span>
+        <span style="color: var(--gray-400); font-size: 13px;">· 6 мин чтения</span>
+      </div>
+    </div>
+    <div style="font-size: 16px; line-height: 1.85; color: var(--gray-800);">
+      <p>Redmine является основой управления проектами для инженерных команд с 2006 года. Построенный на Ruby on Rails, он предлагает трекинг задач, учёт времени, диаграммы Ганта, вики и мощную архитектуру плагинов — всё это размещается самостоятельно, с открытым кодом, без лицензионных затрат на пользователя.</p>
+
+      <h2 style="font-size: 24px; font-weight: 400; margin: 40px 0 16px; color: var(--gray-900);">Почему команды выбирают Redmine</h2>
+      <ul style="margin: 16px 0 16px 24px; display: flex; flex-direction: column; gap: 8px;">
+        <li><strong>Нет цены за пользователя.</strong> Добавьте 500 пользователей — стоимость не изменится.</li>
+        <li><strong>Полное владение данными.</strong> Ваши задачи, журналы времени и документы остаются на вашей инфраструктуре.</li>
+        <li><strong>Гибкие настраиваемые поля.</strong> Адаптируйте Redmine под ваш рабочий процесс.</li>
+        <li><strong>API доступ.</strong> Интегрируйте с CI/CD конвейерами, Slack или любым внутренним инструментом.</li>
+      </ul>
+
+      <h2 style="font-size: 24px; font-weight: 400; margin: 40px 0 16px; color: var(--gray-900);">Миграция со старой версии</h2>
+      <p>Многие организации имеют установки Redmine которым годы — некоторые ещё с версии 1.x или 2.x. Обновление этих установок требует осторожности.</p>
+      <p style="margin-top: 16px;"><strong>Совместимость версий Ruby.</strong> Старые версии Redmine работали на Ruby 1.9 или 2.x. Текущий Redmine требует Ruby 3.x. Обновление Ruby должно происходить параллельно с обновлением Redmine.</p>
+      <p style="margin-top: 16px;"><strong>Совместимость плагинов.</strong> Плагины написанные для Redmine 2.x редко работают на Redmine 5.x без модификации. Каждый плагин нужно оценить: найти современную альтернативу, обновить плагин или удалить функциональность.</p>
+      <p style="margin-top: 16px;">Мы успешно мигрировали установки Redmine с базами данных более 300ГБ, сохранив все исторические данные, вложения и пользовательские конфигурации.</p>
+
+      <h2 style="font-size: 24px; font-weight: 400; margin: 40px 0 16px; color: var(--gray-900);">Полезные плагины</h2>
+      <ul style="margin: 16px 0 16px 24px; display: flex; flex-direction: column; gap: 8px;">
+        <li><strong>Redmine Agile</strong> — Kanban доски и планирование спринтов</li>
+        <li><strong>Redmine Checklists</strong> — подзадачи внутри задач</li>
+        <li><strong>Redmine CRM</strong> — управление контактами интегрированное с трекингом проектов</li>
+      </ul>
+
+      <div style="margin-top: 52px; padding: 28px; background: var(--blue-50); border-radius: var(--radius-lg); border: 1px solid var(--blue-100);">
+        <p style="font-size: 15px; color: var(--gray-800); margin-bottom: 16px;">Нужна помощь с Redmine — установка, миграция или кастомизация?</p>
+        <a href="/ru/#contact" class="btn-primary" style="display: inline-flex;">Обсудить проект Redmine</a>
+      </div>
+    </div>
+  </div>
+</article>
