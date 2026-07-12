@@ -1,0 +1,75 @@
+---
+layout: default
+lang: en
+title: "Redmine Setup, Migration and Customization: A Practical Guide"
+description: "Redmine is one of the most powerful open-source project management tools available. Learn about setup, plugins, migration from older versions, and customization options."
+date: 2025-07-10
+slug: redmine-setup-migration-customization
+---
+
+<article class="section">
+  <div class="container" style="max-width: 760px;">
+    <div style="margin-bottom: 40px;">
+      <span class="section-label">Blog</span>
+      <h1 style="font-size: clamp(26px, 4vw, 38px); font-weight: 300; color: var(--gray-900); margin: 12px 0 16px; letter-spacing: -0.02em; line-height: 1.3;">Redmine Setup, Migration and Customization: A Practical Guide</h1>
+      <div style="display:flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+        <span style="color: var(--gray-400); font-size: 13px; font-family: var(--font-mono);">July 10, 2025</span>
+        <span style="color: var(--gray-400); font-size: 13px;">·</span>
+        <span style="color: var(--gray-400); font-size: 13px;">6 min read</span>
+      </div>
+    </div>
+
+    <div style="font-size: 16px; line-height: 1.85; color: var(--gray-800);">
+      <p>Redmine has been the backbone of project management for engineering teams since 2006. Built on Ruby on Rails, it offers issue tracking, time logging, Gantt charts, wikis, and a powerful plugin architecture — all self-hosted, all open source, with no per-seat licensing costs.</p>
+
+      <p style="margin-top: 24px;">For teams that have outgrown simple task boards but do not want to pay enterprise prices for Jira, Redmine remains one of the best options available.</p>
+
+      <h2 style="font-size: 24px; font-weight: 400; margin: 40px 0 16px; color: var(--gray-900); letter-spacing: -0.01em;">Why Teams Choose Redmine</h2>
+      <p>The core advantages of Redmine over SaaS alternatives:</p>
+      <ul style="margin: 16px 0 16px 24px; display: flex; flex-direction: column; gap: 8px;">
+        <li><strong>No per-user pricing.</strong> Add 500 users — the cost does not change.</li>
+        <li><strong>Full data ownership.</strong> Your issues, time logs, and documents stay on your infrastructure.</li>
+        <li><strong>Flexible custom fields.</strong> Adapt Redmine to your workflow, not the other way around.</li>
+        <li><strong>Plugin ecosystem.</strong> Hundreds of community and commercial plugins for every need.</li>
+        <li><strong>API access.</strong> Integrate with CI/CD pipelines, Slack, or any internal tool.</li>
+      </ul>
+
+      <h2 style="font-size: 24px; font-weight: 400; margin: 40px 0 16px; color: var(--gray-900); letter-spacing: -0.01em;">Fresh Installation: What to Consider</h2>
+      <p>A standard Redmine installation on Ubuntu with MySQL or PostgreSQL takes about an hour. But the decisions made during setup have long-term consequences:</p>
+      <p style="margin-top: 16px;"><strong>Database choice.</strong> PostgreSQL is recommended for new installations — better performance at scale and superior handling of concurrent writes. MySQL works well but requires more tuning for large datasets.</p>
+      <p style="margin-top: 16px;"><strong>Storage for attachments.</strong> Plan for attachment storage early. Redmine stores files on the filesystem by default — ensure your backup strategy covers this directory alongside the database.</p>
+      <p style="margin-top: 16px;"><strong>Email configuration.</strong> Outgoing email for notifications is essential. SMTP configuration with a reliable provider (or your own mail server) should be set up before onboarding users.</p>
+
+      <h2 style="font-size: 24px; font-weight: 400; margin: 40px 0 16px; color: var(--gray-900); letter-spacing: -0.01em;">Migrating From an Older Version</h2>
+      <p>Many organizations run Redmine installations that are years old — some dating back to version 1.x or 2.x. Upgrading these installations requires care:</p>
+      <p style="margin-top: 16px;"><strong>Ruby version compatibility.</strong> Older Redmine versions ran on Ruby 1.9 or 2.x. Current Redmine requires Ruby 3.x. The Ruby upgrade must happen alongside the Redmine upgrade, and gems need to be re-evaluated.</p>
+      <p style="margin-top: 16px;"><strong>Plugin compatibility.</strong> Plugins written for Redmine 2.x rarely work on Redmine 5.x without modification. Each plugin must be assessed: find a modern alternative, update the plugin, or remove the functionality.</p>
+      <p style="margin-top: 16px;"><strong>Database migrations.</strong> Running migrations on a database with hundreds of thousands of issues requires careful planning — some migrations lock tables and need to run during maintenance windows.</p>
+      <p style="margin-top: 16px;">We have successfully migrated Redmine installations with databases exceeding 300GB, preserving all historical data, attachments, and custom configurations. The process is methodical but achievable.</p>
+
+      <h2 style="font-size: 24px; font-weight: 400; margin: 40px 0 16px; color: var(--gray-900); letter-spacing: -0.01em;">Essential Plugins Worth Installing</h2>
+      <p>A few plugins that significantly improve the Redmine experience:</p>
+      <ul style="margin: 16px 0 16px 24px; display: flex; flex-direction: column; gap: 8px;">
+        <li><strong>Redmine Agile</strong> — Kanban boards and sprint planning for agile teams</li>
+        <li><strong>Redmine Checklists</strong> — Sub-tasks within issues without creating child issues</li>
+        <li><strong>Redmine CRM</strong> — Contact management integrated with project tracking</li>
+        <li><strong>Easy Redmine</strong> — Commercial extension with resource management and advanced reporting</li>
+      </ul>
+
+      <h2 style="font-size: 24px; font-weight: 400; margin: 40px 0 16px; color: var(--gray-900); letter-spacing: -0.01em;">Performance Optimization for Large Instances</h2>
+      <p>Redmine installations with tens of thousands of issues and hundreds of active users can become slow without proper configuration. Key areas to address:</p>
+      <ul style="margin: 16px 0 16px 24px; display: flex; flex-direction: column; gap: 8px;">
+        <li>Database query optimization and index tuning</li>
+        <li>Puma or Passenger configuration for your server's resources</li>
+        <li>Background job processing for email and notifications</li>
+        <li>Caching with Redis or Memcached</li>
+        <li>Regular database maintenance (VACUUM for PostgreSQL, OPTIMIZE for MySQL)</li>
+      </ul>
+
+      <div style="margin-top: 52px; padding: 28px; background: var(--blue-50); border-radius: var(--radius-lg); border: 1px solid var(--blue-100);">
+        <p style="font-size: 15px; color: var(--gray-800); margin-bottom: 16px;">Need help with Redmine — installation, migration, or customization? We have done this work for organizations of all sizes.</p>
+        <a href="/en/#contact" class="btn-primary" style="display: inline-flex;">Discuss your Redmine project</a>
+      </div>
+    </div>
+  </div>
+</article>
