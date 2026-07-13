@@ -28,11 +28,19 @@ description: Профессиональная разработка Ruby on Rails
     </div>
     <div class="services-grid">
       {% for s in t.services.list %}
+      {% if s.url %}
+      <a href="{{ s.url }}" class="service-card" style="text-decoration: none; color: inherit; display: block;">
+        <div class="service-icon"><i class="ti {{ s.icon }}" aria-hidden="true"></i></div>
+        <h3>{{ s.title }} <i class="ti ti-arrow-right" style="font-size: 14px; opacity: 0.4;"></i></h3>
+        <p>{{ s.desc }}</p>
+      </a>
+      {% else %}
       <div class="service-card">
         <div class="service-icon"><i class="ti {{ s.icon }}" aria-hidden="true"></i></div>
         <h3>{{ s.title }}</h3>
         <p>{{ s.desc }}</p>
       </div>
+      {% endif %}
       {% endfor %}
     </div>
   </div>
