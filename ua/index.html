@@ -58,17 +58,19 @@ description: Професійна розробка Ruby on Rails, налашту
     </div>
     <div class="portfolio-grid">
       {% for p in site.data.portfolio %}
+      {% assign pt = p[lang] %}
       <div class="portfolio-card">
         <div class="portfolio-icon-wrap {{ p.color }}">
           <i class="ti {{ p.icon }}" aria-hidden="true"></i>
         </div>
-        <h3>{{ p.ua.title }}</h3>
-        <p>{{ p.ua.desc }}</p>
-        <div class="tags">{% for tag in p.ua.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</div>
+        <h3>{{ pt.title }}</h3>
+        <p>{{ pt.desc }}</p>
+        <div class="tags">
+          {% for tag in pt.tags %}
+          <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
       </div>
-      {% endfor %}
-    </div>
-  </div>
 </section>
 
 <section class="section section-alt" id="blog">
