@@ -49,6 +49,7 @@ description: Професійна розробка Ruby on Rails, налашту
   </div>
 </section>
 
+{% assign lang = page.lang %}
 <section class="section" id="portfolio">
   <div class="container">
     <div class="section-header">
@@ -58,7 +59,7 @@ description: Професійна розробка Ruby on Rails, налашту
     </div>
     <div class="portfolio-grid">
       {% for p in site.data.portfolio %}
-      {% assign pt = p.ua %}
+      {% assign pt = p[lang] %}
       <div class="portfolio-card">
         <div class="portfolio-icon-wrap {{ p.color }}">
           <i class="ti {{ p.icon }}" aria-hidden="true"></i>
