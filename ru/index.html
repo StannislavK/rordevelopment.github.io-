@@ -65,10 +65,23 @@ description: Ruby on Rails, PHP, мобильные приложения, CRM/ER
       <h2 class="section-title">{{ t.blog.title }}</h2>
       <p class="section-sub">{{ t.blog.subtitle }}</p>
     </div>
+    {% assign ru_posts = site.posts | where: "lang", "ru" %}
+    {% if ru_posts.size > 0 %}
+    <div class="blog-grid">
+      {% for post in ru_posts limit:3 %}
+      <a href="{{ post.url }}" class="blog-card">
+        <div class="blog-date">{{ post.date | date: "%d.%m.%Y" }}</div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
     <div class="blog-placeholder">
       <i class="ti ti-writing" aria-hidden="true"></i>
       <p>Статьи появятся в ближайшее время.</p>
     </div>
+    {% endif %}
   </div>
 </section>
 
