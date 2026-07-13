@@ -55,7 +55,7 @@ description: Professionelle Ruby on Rails Entwicklung, Redmine Migration und Ein
     </div>
     <div class="portfolio-grid">
       {% for p in site.data.portfolio %}
-      {% assign pt = p[lang] %}
+      {% assign pt = p.de %}
       <div class="portfolio-card">
         <div class="portfolio-icon-wrap {{ p.color }}">
           <i class="ti {{ p.icon }}" aria-hidden="true"></i>
