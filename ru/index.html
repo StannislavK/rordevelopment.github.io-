@@ -55,7 +55,7 @@ description: Профессиональная разработка Ruby on Rails
     </div>
     <div class="portfolio-grid">
       {% for p in site.data.portfolio %}
-      {% assign pt = p[lang] %}
+      {% assign pt = p.ru %}
       <div class="portfolio-card">
         <div class="portfolio-icon-wrap {{ p.color }}">
           <i class="ti {{ p.icon }}" aria-hidden="true"></i>
