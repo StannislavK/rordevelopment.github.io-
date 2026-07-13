@@ -65,10 +65,23 @@ description: Ruby on Rails, PHP, mobile Apps, CRM/ERP-Systeme und Server-Managem
       <h2 class="section-title">{{ t.blog.title }}</h2>
       <p class="section-sub">{{ t.blog.subtitle }}</p>
     </div>
+    {% assign de_posts = site.posts | where: "lang", "de" %}
+    {% if de_posts.size > 0 %}
+    <div class="blog-grid">
+      {% for post in de_posts limit:3 %}
+      <a href="{{ post.url }}" class="blog-card">
+        <div class="blog-date">{{ post.date | date: "%d.%m.%Y" }}</div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
     <div class="blog-placeholder">
       <i class="ti ti-writing" aria-hidden="true"></i>
       <p>Artikel erscheinen in Kürze.</p>
     </div>
+    {% endif %}
   </div>
 </section>
 
