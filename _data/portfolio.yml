@@ -1,79 +1,199 @@
-- id: ecommerce
-  icon: ti-shopping-cart
+- id: auto-used
+  icon: ti-car
   color: blue
   en:
-    title: E-commerce Platform
-    tags: [Ruby on Rails, MySQL, Redis, Sidekiq]
-    desc: A multi-vendor online store with a product catalog of 50,000+ items, order management, payment gateway integrations, and an admin panel for content management. Includes automated email notifications and a loyalty system.
+    title: Used Car Marketplace
+    tags: [Ruby on Rails, PostgreSQL, Redis, Elasticsearch]
+    desc: Online marketplace for used vehicles with advanced search filters, price history, comparison tool, dealer accounts and integration with national vehicle registration databases.
   ua:
-    title: E-commerce платформа
-    tags: [Ruby on Rails, MySQL, Redis, Sidekiq]
-    desc: Багатовендорний інтернет-магазин з каталогом понад 50 000 товарів, управлінням замовленнями, інтеграцією платіжних систем та адмін-панеллю. Автоматичні email-сповіщення та система лояльності.
+    title: Маркетплейс вживаних авто
+    tags: [Ruby on Rails, PostgreSQL, Redis, Elasticsearch]
+    desc: Онлайн-майданчик для продажу вживаних автомобілів з розширеними фільтрами пошуку, історією цін, інструментом порівняння, акаунтами дилерів та інтеграцією з реєстрами ТЗ.
   de:
-    title: E-Commerce-Plattform
-    tags: [Ruby on Rails, MySQL, Redis, Sidekiq]
-    desc: Ein Multi-Vendor-Onlineshop mit über 50.000 Produkten, Auftragsverwaltung, Zahlungsintegration und Admin-Panel. Automatisierte E-Mail-Benachrichtigungen und ein Treueprogramm.
+    title: Gebrauchtwagenmarktplatz
+    tags: [Ruby on Rails, PostgreSQL, Redis, Elasticsearch]
+    desc: Online-Marktplatz für Gebrauchtwagen mit erweiterten Suchfiltern, Preisverlauf, Vergleichstool, Händlerkonten und Integration mit nationalen Fahrzeugregistern.
   ru:
-    title: E-commerce платформа
-    tags: [Ruby on Rails, MySQL, Redis, Sidekiq]
-    desc: Мультивендорный интернет-магазин с каталогом более 50 000 товаров, управлением заказами, интеграцией платёжных систем и админ-панелью. Автоматические email-уведомления и система лояльности.
+    title: Маркетплейс подержанных авто
+    tags: [Ruby on Rails, PostgreSQL, Redis, Elasticsearch]
+    desc: Онлайн-площадка для продажи подержанных автомобилей с расширенными фильтрами поиска, историей цен, инструментом сравнения, аккаунтами дилеров и интеграцией с реестрами ТС.
 
-- id: vending
-  icon: ti-droplet
+- id: auto-new
+  icon: ti-steering-wheel
   color: teal
   en:
-    title: Vending Machine Software
-    tags: [Ruby, IoT, REST API, PostgreSQL]
-    desc: Custom software for a network of drinking water vending machines. Real-time monitoring, remote management, sales analytics, and automated maintenance alerts. Integration with payment terminals and mobile app for end users.
+    title: New Car Dealership Platform
+    tags: [Ruby on Rails, MySQL, Sidekiq, REST API]
+    desc: E-commerce platform for a new car dealership network. Online configurator, test drive booking, trade-in calculator, CRM integration and automated lead routing to dealerships.
   ua:
-    title: ПЗ для вендингових автоматів
-    tags: [Ruby, IoT, REST API, PostgreSQL]
-    desc: Програмне забезпечення для мережі вендингових автоматів з питною водою. Моніторинг в реальному часі, дистанційне управління, аналітика продажів та сповіщення про обслуговування. Інтеграція з платіжними терміналами і мобільним додатком.
+    title: Платформа дилера нових авто
+    tags: [Ruby on Rails, MySQL, Sidekiq, REST API]
+    desc: E-commerce платформа для мережі дилерів нових автомобілів. Онлайн-конфігуратор, запис на тест-драйв, калькулятор трейд-ін, інтеграція з CRM та автоматичний розподіл лідів.
   de:
-    title: Vending-Automaten-Software
-    tags: [Ruby, IoT, REST API, PostgreSQL]
-    desc: Individuelle Software für ein Netzwerk von Trinkwasser-Automaten. Echtzeit-Monitoring, Fernsteuerung, Verkaufsanalyse und automatische Wartungsmeldungen. Integration mit Zahlungsterminals und mobiler App.
+    title: Neuwagen-Händlerplattform
+    tags: [Ruby on Rails, MySQL, Sidekiq, REST API]
+    desc: E-Commerce-Plattform für ein Neuwagen-Händlernetz. Online-Konfigurator, Probefahrt-Buchung, Inzahlungnahme-Rechner, CRM-Integration und automatische Lead-Verteilung.
   ru:
-    title: ПО для вендинговых автоматов
-    tags: [Ruby, IoT, REST API, PostgreSQL]
-    desc: Программное обеспечение для сети вендинговых автоматов с питьевой водой. Мониторинг в реальном времени, удалённое управление, аналитика продаж и уведомления об обслуживании. Интеграция с платёжными терминалами и мобильным приложением.
+    title: Платформа дилера новых авто
+    tags: [Ruby on Rails, MySQL, Sidekiq, REST API]
+    desc: E-commerce платформа для сети дилеров новых автомобилей. Онлайн-конфигуратор, запись на тест-драйв, калькулятор трейд-ин, интеграция с CRM и автоматическое распределение лидов.
 
-- id: mobile
-  icon: ti-device-mobile
-  color: purple
-  en:
-    title: Mobile Application
-    tags: [React Native, Ruby on Rails API, PostgreSQL]
-    desc: Cross-platform mobile app with user authentication, real-time notifications, offline mode, and integration with an existing web platform. Published on App Store and Google Play.
-  ua:
-    title: Мобільний додаток
-    tags: [React Native, Ruby on Rails API, PostgreSQL]
-    desc: Кросплатформний мобільний додаток з авторизацією, push-сповіщеннями, офлайн-режимом та інтеграцією з існуючою веб-платформою. Опублікований в App Store та Google Play.
-  de:
-    title: Mobile Anwendung
-    tags: [React Native, Ruby on Rails API, PostgreSQL]
-    desc: Plattformübergreifende mobile App mit Authentifizierung, Echtzeit-Benachrichtigungen, Offline-Modus und Integration mit einer bestehenden Webplattform. Veröffentlicht im App Store und Google Play.
-  ru:
-    title: Мобильное приложение
-    tags: [React Native, Ruby on Rails API, PostgreSQL]
-    desc: Кроссплатформенное мобильное приложение с авторизацией, push-уведомлениями, офлайн-режимом и интеграцией с существующей веб-платформой. Опубликовано в App Store и Google Play.
-
-- id: redmine
-  icon: ti-tool
+- id: gold-avenue
+  icon: ti-currency-dollar
   color: amber
   en:
-    title: Redmine Migration & Upgrade
-    tags: [Redmine, Ruby, MySQL, DevOps]
-    desc: Full migration and upgrade of a Redmine installation with 300GB+ database from version 2.x to the latest. Zero data loss, preserved all custom plugins and workflows. Completed within one month including testing.
+    title: Gold Avenue — Precious Metals Platform
+    tags: [Ruby on Rails, PostgreSQL, Redis, Payment API]
+    desc: Development support for goldavenue.com — an international platform for buying and selling gold, silver and other precious metals. Real-time pricing, secure vault storage integration and multi-currency transactions.
   ua:
-    title: Міграція та оновлення Redmine
-    tags: [Redmine, Ruby, MySQL, DevOps]
-    desc: Повна міграція та оновлення Redmine з базою 300+ ГБ з версії 2.x до актуальної. Без втрати даних, зі збереженням всіх плагінів і налаштувань. Виконано за місяць включно з тестуванням.
+    title: Gold Avenue — платформа дорогоцінних металів
+    tags: [Ruby on Rails, PostgreSQL, Redis, Payment API]
+    desc: Підтримка розробки goldavenue.com — міжнародної платформи для купівлі та продажу золота, срібла та інших дорогоцінних металів. Ціни в реальному часі, інтеграція зі сховищем та мультивалютні транзакції.
   de:
-    title: Redmine-Migration & Upgrade
-    tags: [Redmine, Ruby, MySQL, DevOps]
-    desc: Vollständige Migration und Upgrade einer Redmine-Installation mit 300 GB+ Datenbank von Version 2.x auf die aktuelle Version. Kein Datenverlust, alle Plugins und Workflows erhalten. Abgeschlossen in einem Monat.
+    title: Gold Avenue — Edelmetallplattform
+    tags: [Ruby on Rails, PostgreSQL, Redis, Payment API]
+    desc: Entwicklungsunterstützung für goldavenue.com — eine internationale Plattform für den Kauf und Verkauf von Gold, Silber und anderen Edelmetallen. Echtzeit-Preise, Tresorraumintegration und Mehrwährungstransaktionen.
   ru:
-    title: Миграция и обновление Redmine
-    tags: [Redmine, Ruby, MySQL, DevOps]
-    desc: Полная миграция и обновление Redmine с базой 300+ ГБ с версии 2.x до актуальной. Без потери данных, с сохранением всех плагинов и настроек. Выполнено за месяц включая тестирование.
+    title: Gold Avenue — платформа драгоценных металлов
+    tags: [Ruby on Rails, PostgreSQL, Redis, Payment API]
+    desc: Поддержка разработки goldavenue.com — международной платформы для покупки и продажи золота, серебра и других драгоценных металлов. Цены в реальном времени, интеграция с хранилищем и мультивалютные транзакции.
+
+- id: labor-app
+  icon: ti-briefcase
+  color: purple
+  en:
+    title: Blue-Collar Worker Hiring App
+    tags: [React Native, Ruby on Rails API, PostgreSQL, Push Notifications]
+    desc: Mobile application for hiring specialists in physical trades — builders, plumbers, electricians, cleaners and more. Geo-based search, rating system, instant booking, in-app chat and secure payments.
+  ua:
+    title: Додаток для найму фахівців
+    tags: [React Native, Ruby on Rails API, PostgreSQL, Push Notifications]
+    desc: Мобільний застосунок для найму фахівців фізичної праці — будівельників, сантехніків, електриків, прибиральників тощо. Пошук за геолокацією, система рейтингів, миттєве бронювання, чат та платежі.
+  de:
+    title: App für Handwerker-Vermittlung
+    tags: [React Native, Ruby on Rails API, PostgreSQL, Push Notifications]
+    desc: Mobile App zur Vermittlung von Handwerkern und Fachkräften — Bauarbeiter, Klempner, Elektriker, Reinigungskräfte u.v.m. Geo-Suche, Bewertungssystem, Sofortbuchung, In-App-Chat und sichere Zahlung.
+  ru:
+    title: Приложение для найма специалистов
+    tags: [React Native, Ruby on Rails API, PostgreSQL, Push Notifications]
+    desc: Мобильное приложение для найма специалистов физического труда — строителей, сантехников, электриков, уборщиков и др. Поиск по геолокации, система рейтингов, мгновенное бронирование, чат и платежи.
+
+- id: school-store
+  icon: ti-school
+  color: green
+  en:
+    title: School & Office Supply Store
+    tags: [Ruby on Rails, MySQL, Redis, Sidekiq]
+    desc: E-commerce platform for school supplies, furniture, whiteboards and home and office goods. Bulk order management, B2B accounts for schools and businesses, automated supplier price updates and warehouse integration.
+  ua:
+    title: Магазин товарів для школи та офісу
+    tags: [Ruby on Rails, MySQL, Redis, Sidekiq]
+    desc: E-commerce платформа для шкільних товарів, меблів, дошок та товарів для дому й бізнесу. Управління оптовими замовленнями, B2B-акаунти для шкіл і компаній, автоматичне оновлення цін постачальників.
+  de:
+    title: Schul- und Bürobedarfs-Shop
+    tags: [Ruby on Rails, MySQL, Redis, Sidekiq]
+    desc: E-Commerce-Plattform für Schulmaterial, Möbel, Whiteboards und Bürobedarf. Großbestellungsverwaltung, B2B-Konten für Schulen und Unternehmen, automatische Lieferantenpreis-Updates und Lagerintegration.
+  ru:
+    title: Магазин товаров для школы и офиса
+    tags: [Ruby on Rails, MySQL, Redis, Sidekiq]
+    desc: E-commerce платформа для школьных товаров, мебели, досок и товаров для дома и бизнеса. Управление оптовыми заказами, B2B-аккаунты для школ и компаний, автоматическое обновление цен поставщиков.
+
+- id: events
+  icon: ti-calendar-event
+  color: pink
+  en:
+    title: Events & Culture Platform
+    tags: [Ruby on Rails, PostgreSQL, Elasticsearch, Redis]
+    desc: City events aggregator covering exhibitions, concerts, museum events and conferences. Personalised recommendations, ticket purchasing, venue management and an editorial CMS for event organisers.
+  ua:
+    title: Платформа подій та культури
+    tags: [Ruby on Rails, PostgreSQL, Elasticsearch, Redis]
+    desc: Агрегатор міських подій — виставки, концерти, музеї, конференції. Персоналізовані рекомендації, купівля квитків, управління майданчиками та редакційна CMS для організаторів.
+  de:
+    title: Veranstaltungs- und Kulturplattform
+    tags: [Ruby on Rails, PostgreSQL, Elasticsearch, Redis]
+    desc: Stadtveranstaltungs-Aggregator für Ausstellungen, Konzerte, Museen und Konferenzen. Personalisierte Empfehlungen, Ticketkauf, Venue-Management und redaktionelles CMS für Veranstalter.
+  ru:
+    title: Платформа событий и культуры
+    tags: [Ruby on Rails, PostgreSQL, Elasticsearch, Redis]
+    desc: Агрегатор городских событий — выставки, концерты, музеи, конференции. Персонализированные рекомендации, покупка билетов, управление площадками и редакционная CMS для организаторов.
+
+- id: clinics
+  icon: ti-stethoscope
+  color: red
+  en:
+    title: Private Clinic Websites
+    tags: [Ruby on Rails, PostgreSQL, REST API, Integrations]
+    desc: Series of websites for private medical clinics. Online appointment booking, doctor profiles, service catalogues, patient portal and integration with clinic management systems. GDPR-compliant data handling.
+  ua:
+    title: Сайти приватних клінік
+    tags: [Ruby on Rails, PostgreSQL, REST API, Integrations]
+    desc: Серія сайтів для приватних медичних клінік. Онлайн-запис до лікаря, профілі лікарів, каталог послуг, кабінет пацієнта та інтеграція з системами управління клінікою. Відповідність вимогам захисту даних.
+  de:
+    title: Privatklinikenwebsites
+    tags: [Ruby on Rails, PostgreSQL, REST API, Integrations]
+    desc: Website-Serie für Privatkliniken. Online-Terminbuchung, Arztprofile, Leistungskatalog, Patientenportal und Integration mit Klinikverwaltungssystemen. DSGVO-konforme Datenverarbeitung.
+  ru:
+    title: Сайты частных клиник
+    tags: [Ruby on Rails, PostgreSQL, REST API, Integrations]
+    desc: Серия сайтов для частных медицинских клиник. Онлайн-запись к врачу, профили врачей, каталог услуг, кабинет пациента и интеграция с системами управления клиникой. Соответствие требованиям защиты данных.
+
+- id: autoparts
+  icon: ti-settings
+  color: orange
+  en:
+    title: Auto Parts E-commerce
+    tags: [Ruby on Rails, MySQL, Elasticsearch, Sidekiq]
+    desc: Online store for auto parts with a catalogue of 200,000+ SKUs, VIN-based parts search, compatibility checker, multi-warehouse stock management and integration with major auto parts suppliers.
+  ua:
+    title: Інтернет-магазин автозапчастин
+    tags: [Ruby on Rails, MySQL, Elasticsearch, Sidekiq]
+    desc: Інтернет-магазин автозапчастин з каталогом понад 200 000 артикулів, пошуком за VIN, перевіркою сумісності, управлінням залишками на кількох складах та інтеграцією з постачальниками.
+  de:
+    title: Kfz-Teile-Onlineshop
+    tags: [Ruby on Rails, MySQL, Elasticsearch, Sidekiq]
+    desc: Online-Shop für Kfz-Teile mit über 200.000 Artikeln, VIN-basierter Teilesuche, Kompatibilitätsprüfung, Multi-Lager-Bestandsverwaltung und Integration mit führenden Kfz-Teile-Lieferanten.
+  ru:
+    title: Интернет-магазин автозапчастей
+    tags: [Ruby on Rails, MySQL, Elasticsearch, Sidekiq]
+    desc: Интернет-магазин автозапчастей с каталогом более 200 000 артикулов, поиском по VIN, проверкой совместимости, управлением остатками на нескольких складах и интеграцией с поставщиками.
+
+- id: residents-app
+  icon: ti-building-community
+  color: indigo
+  en:
+    title: Residential Complex Service App
+    tags: [React Native, Ruby on Rails API, PostgreSQL, Push Notifications]
+    desc: Mobile application for residents of multiple apartment buildings. Utility bill payments, maintenance requests, voting on building issues, notice board, intercom integration and communication with building management.
+  ua:
+    title: Додаток для жителів ЖК
+    tags: [React Native, Ruby on Rails API, PostgreSQL, Push Notifications]
+    desc: Мобільний застосунок для мешканців кількох житлових комплексів. Оплата комунальних послуг, заявки на ремонт, голосування, дошка оголошень, інтеграція з домофоном та зв'язок з управителем.
+  de:
+    title: Wohnkomplex-Service-App
+    tags: [React Native, Ruby on Rails API, PostgreSQL, Push Notifications]
+    desc: Mobile App für Bewohner mehrerer Wohnanlagen. Nebenkostenzahlungen, Wartungsanfragen, Abstimmungen, schwarzes Brett, Gegensprechanlage-Integration und Kommunikation mit der Hausverwaltung.
+  ru:
+    title: Приложение для жильцов ЖК
+    tags: [React Native, Ruby on Rails API, PostgreSQL, Push Notifications]
+    desc: Мобильное приложение для жильцов нескольких жилых комплексов. Оплата коммунальных услуг, заявки на ремонт, голосование, доска объявлений, интеграция с домофоном и связь с управляющим.
+
+- id: telegram-bots
+  icon: ti-brand-telegram
+  color: cyan
+  en:
+    title: Telegram Bots
+    tags: [Ruby, Telegram API, PostgreSQL, Redis]
+    desc: Custom Telegram bots for business automation — order notifications, customer support, appointment reminders, payment processing and CRM integration. Deployed for clients in e-commerce, services and hospitality.
+  ua:
+    title: Telegram боти
+    tags: [Ruby, Telegram API, PostgreSQL, Redis]
+    desc: Telegram-боти для автоматизації бізнесу — сповіщення про замовлення, підтримка клієнтів, нагадування про записи, прийом платежів та інтеграція з CRM. Впроваджені для клієнтів з e-commerce, сфери послуг та HoReCa.
+  de:
+    title: Telegram-Bots
+    tags: [Ruby, Telegram API, PostgreSQL, Redis]
+    desc: Individuelle Telegram-Bots für die Geschäftsautomatisierung — Bestellbenachrichtigungen, Kundensupport, Terminerinnerungen, Zahlungsabwicklung und CRM-Integration. Eingesetzt in E-Commerce, Dienstleistungen und Gastronomie.
+  ru:
+    title: Telegram боты
+    tags: [Ruby, Telegram API, PostgreSQL, Redis]
+    desc: Telegram-боты для автоматизации бизнеса — уведомления о заказах, поддержка клиентов, напоминания о записях, приём платежей и интеграция с CRM. Внедрены для клиентов в e-commerce, услугах и HoReCa.
