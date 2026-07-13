@@ -34,8 +34,9 @@ en:
         title: Project Management
         desc: Managing development of websites and web applications from brief to launch.
       - icon: ti-server
-        title: Server Management
-        desc: Setup, migration and maintenance of infrastructure of any complexity.
+        title: Redmine Setup
+        desc: Installation, configuration and migration of Redmine project management systems.
+        url: /en/services/redmine-setup/
       - icon: ti-brush
         title: UI/UX Design
         desc: Interface design by verified specialists hired per project.
@@ -96,8 +97,9 @@ ua:
         title: Управління проектом
         desc: Ведення розробки від брифу до запуску. Прозоро і в строк.
       - icon: ti-server
-        title: Сервери та DevOps
-        desc: Налаштування, міграція та підтримка інфраструктури будь-якої складності.
+        title: Налаштування Redmine
+        desc: Встановлення, налаштування та міграція систем управління проектами Redmine.
+        url: /ua/services/nalashtuvannya-redmine/
       - icon: ti-brush
         title: UI/UX Дизайн
         desc: Дизайн інтерфейсів від перевірених спеціалістів під конкретний проект.
@@ -158,8 +160,9 @@ de:
         title: Projektmanagement
         desc: Steuerung der Entwicklung vom Briefing bis zum Launch.
       - icon: ti-server
-        title: Server & DevOps
-        desc: Einrichtung, Migration und Wartung von Infrastruktur jeder Komplexität.
+        title: Redmine Einrichtung
+        desc: Installation, Konfiguration und Migration von Redmine Projektmanagementsystemen.
+        url: /de/services/redmine-einrichtung/
       - icon: ti-brush
         title: UI/UX Design
         desc: Interface-Design durch geprüfte Spezialisten je nach Projekt.
@@ -220,8 +223,9 @@ ru:
         title: Управление проектом
         desc: Ведение разработки от брифа до запуска. Прозрачно и в срок.
       - icon: ti-server
-        title: Серверы и DevOps
-        desc: Настройка, миграция и поддержка инфраструктуры любой сложности.
+        title: Настройка Redmine
+        desc: Установка, настройка и миграция систем управления проектами Redmine.
+        url: /ru/services/nastrojka-redmine/
       - icon: ti-brush
         title: UI/UX Дизайн
         desc: Дизайн интерфейсов от проверенных специалистов под конкретный проект.
