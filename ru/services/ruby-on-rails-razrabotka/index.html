@@ -1,0 +1,69 @@
+---
+layout: default
+lang: ru
+title: Разработка Ruby on Rails — Веб-приложения на заказ
+description: Профессиональная разработка Ruby on Rails от MVP до enterprise. Удалённая команда, чистый код, прозрачный процесс. Оценка проекта за 24 часа.
+permalink: /ru/services/ruby-on-rails-razrabotka/
+---
+
+<section class="section">
+  <div class="container" style="max-width: 860px;">
+
+    <div style="margin-bottom: 48px;">
+      <span class="section-label">Услуги</span>
+      <h1 style="font-size: clamp(28px, 4vw, 42px); font-weight: 300; color: var(--gray-900); margin: 12px 0 16px; letter-spacing: -0.02em;">
+        Разработка Ruby on Rails
+      </h1>
+      <p style="font-size: 18px; color: var(--gray-500); line-height: 1.7; max-width: 640px;">
+        Разрабатываем и улучшаем Ruby on Rails приложения любой сложности — от ранних MVP до высоконагруженных enterprise-систем.
+      </p>
+    </div>
+
+    <div style="display: grid; gap: 16px; margin-bottom: 48px;">
+
+      <div style="border: 1px solid var(--gray-100); border-radius: 12px; padding: 28px;">
+        <h2 style="font-size: 18px; font-weight: 500; color: var(--gray-900); margin: 0 0 12px;">Что мы разрабатываем</h2>
+        <ul style="color: var(--gray-500); line-height: 1.8; padding-left: 20px; margin: 0;">
+          <li>Веб-приложения и SaaS-платформы на Rails 7+</li>
+          <li>REST API и GraphQL бэкенды</li>
+          <li>Обновление legacy Rails проектов (Rails 3/4/5 → 7)</li>
+          <li>Оптимизация производительности и рефакторинг</li>
+          <li>Интеграция с платёжными системами и сторонними сервисами</li>
+          <li>Админ-панели, дашборды, CRM-модули</li>
+        </ul>
+      </div>
+
+      <div style="border: 1px solid var(--gray-100); border-radius: 12px; padding: 28px;">
+        <h2 style="font-size: 18px; font-weight: 500; color: var(--gray-900); margin: 0 0 12px;">Наш стек</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          {% assign tags = "Ruby on Rails 7|PostgreSQL|Redis|Sidekiq|RSpec|Docker|AWS|Heroku|GitHub Actions" | split: "|" %}
+          {% for tag in tags %}
+          <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div style="border: 1px solid var(--gray-100); border-radius: 12px; padding: 28px;">
+        <h2 style="font-size: 18px; font-weight: 500; color: var(--gray-900); margin: 0 0 12px;">Как мы работаем</h2>
+        <ol style="color: var(--gray-500); line-height: 1.8; padding-left: 20px; margin: 0;">
+          <li>Вы описываете задачу — отвечаем в течение 24 часов</li>
+          <li>Оцениваем объём и сроки, согласовываем формат работы</li>
+          <li>Разработка короткими итерациями с регулярными демо</li>
+          <li>Code review, тестирование, деплой на production</li>
+          <li>Поддержка и дальнейшее развитие по необходимости</li>
+        </ol>
+      </div>
+
+    </div>
+
+    <div style="background: var(--blue-50, #f0f4ff); border-radius: 12px; padding: 36px; text-align: center;">
+      <h2 style="font-size: 22px; font-weight: 400; color: var(--gray-900); margin: 0 0 12px;">Готовы обсудить проект?</h2>
+      <p style="color: var(--gray-500); margin: 0 0 24px;">Расскажите о задаче — предложим оптимальный подход и оценим стоимость.</p>
+      <a href="/ru/#contact" class="btn-primary" style="display: inline-flex; align-items: center; gap: 8px;">
+        <i class="ti ti-send"></i>
+        Получить бесплатную консультацию
+      </a>
+    </div>
+
+  </div>
+</section>
