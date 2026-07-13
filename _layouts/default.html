@@ -24,10 +24,10 @@
         <span class="logo-text">ROR Development</span>
       </a>
       <div class="nav-links">
-        <a href="#services">{{ t.nav.services }}</a>
-        <a href="#portfolio">{{ t.nav.portfolio }}</a>
-        <a href="#blog">{{ t.nav.blog }}</a>
-        <a href="#contact">{{ t.nav.contact }}</a>
+        <a href="/{{ lang }}/#services">{{ t.nav.services }}</a>
+        <a href="/{{ lang }}/#portfolio">{{ t.nav.portfolio }}</a>
+        <a href="/{{ lang }}/blog/">{{ t.nav.blog }}</a>
+        <a href="/{{ lang }}/#contact">{{ t.nav.contact }}</a>
       </div>
       <div class="lang-switcher">
   <a href="{{ site.baseurl }}/en/" class="lang-btn {% if lang == 'en' %}active{% endif %}">EN</a>
