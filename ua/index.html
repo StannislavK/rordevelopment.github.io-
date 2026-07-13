@@ -70,10 +70,23 @@ description: Ruby on Rails, PHP, мобільні додатки, CRM/ERP сис
       <h2 class="section-title">{{ t.blog.title }}</h2>
       <p class="section-sub">{{ t.blog.subtitle }}</p>
     </div>
+    {% assign ua_posts = site.posts | where: "lang", "ua" %}
+    {% if ua_posts.size > 0 %}
+    <div class="blog-grid">
+      {% for post in ua_posts limit:3 %}
+      <a href="{{ post.url }}" class="blog-card">
+        <div class="blog-date">{{ post.date | date: "%d.%m.%Y" }}</div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
     <div class="blog-placeholder">
       <i class="ti ti-writing" aria-hidden="true"></i>
-      <p>Статті скоро з'являться. Слідкуйте за оновленнями в Telegram.</p>
+      <p>Статті скоро з'являться.</p>
     </div>
+    {% endif %}
   </div>
 </section>
 
