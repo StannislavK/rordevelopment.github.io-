@@ -1,0 +1,71 @@
+---
+layout: default
+lang: ru
+title: "Redmine vs Jira: что выбрать для управления проектами"
+date: 2025-08-01
+description: Честное сравнение Redmine и Jira — стоимость, удобство, интеграции и гибкость. Поможем выбрать подходящий инструмент для вашей команды.
+---
+
+<div class="section">
+  <div class="container" style="max-width: 720px;">
+    <div style="margin-bottom: 40px;">
+      <span class="section-label">Блог</span>
+      <h1 style="font-size: 32px; font-weight: 300; color: var(--gray-900); margin: 12px 0; letter-spacing: -0.02em;">{{ page.title }}</h1>
+      <p style="color: var(--gray-400); font-size: 14px; font-family: var(--font-mono);">{{ page.date | date: "%d.%m.%Y" }}</p>
+    </div>
+    <div style="font-size: 16px; line-height: 1.8; color: var(--gray-800);">
+
+      <p>Если вы выбираете инструмент для управления проектами, Redmine и Jira — два самых очевидных кандидата. Оба мощные, оба популярные, оба умеют справляться со сложными рабочими процессами. Но созданы они для очень разных команд.</p>
+
+      <p style="margin-top: 20px;">Делимся честным сравнением на основе нашего опыта настройки и миграции между этими платформами.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Что такое Redmine?</h2>
+      <p>Redmine — бесплатный инструмент управления проектами с открытым исходным кодом, написанный на Ruby on Rails. Существует с 2006 года, имеет большое активное сообщество. Вы разворачиваете его на собственном сервере — полный контроль над данными, никаких абонентских платежей и возможность настроить всё под себя.</p>
+      <p style="margin-top: 16px;">Особенно популярен среди технических команд, которым нужна гибкость без платы за каждое рабочее место.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Что такое Jira?</h2>
+      <p>Jira — коммерческий продукт от Atlassian. Доминирует в крупных компаниях и организациях, уже использующих экосистему Atlassian (Confluence, Bitbucket). Предлагает удобный интерфейс, мощную аналитику и глубокие интеграции из коробки — но за деньги.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Стоимость</h2>
+      <p><strong style="font-weight: 500;">Redmine</strong> бесплатен. Вы платите только за хостинг (от $5–10 в месяц на VPS) и опционально за коммерческие плагины. Для команды из 20 человек — $100–200 в год.</p>
+      <p style="margin-top: 16px;"><strong style="font-weight: 500;">Jira</strong> берёт плату за каждого пользователя. При $8–15 за пользователя в месяц команда из 20 человек обходится в $1 920–3 600 в год — ещё до учёта дополнений.</p>
+      <p style="margin-top: 16px;">Победитель по стоимости: <strong style="font-weight: 500;">Redmine</strong>.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Удобство использования</h2>
+      <p>Jira серьёзно вложилась в UX. Ввести в работу нетехнического сотрудника несложно, интерфейс интуитивно понятен большинству пользователей.</p>
+      <p style="margin-top: 16px;">Интерфейс Redmine функциональный, но устаревший. Новым членам команды обычно нужно небольшое введение. Зато опытные пользователи ценят его прямолинейность.</p>
+      <p style="margin-top: 16px;">Победитель по удобству: <strong style="font-weight: 500;">Jira</strong>.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Гибкость и контроль</h2>
+      <p>Здесь Redmine вне конкуренции. Поскольку вы сами его разворачиваете и имеете доступ к исходному коду, можно настроить рабочие процессы, поля, права доступа и внешний вид под конкретные нужды команды. Богатая экосистема плагинов это только усиливает.</p>
+      <p style="margin-top: 16px;">Jira предлагает конфигурацию — но в рамках, которые устанавливает Atlassian. Вы зависите от их инфраструктуры и их ценовой политики.</p>
+      <p style="margin-top: 16px;">Победитель по гибкости: <strong style="font-weight: 500;">Redmine</strong>.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Интеграции</h2>
+      <p>Jira интегрируется практически со всем — GitHub, Slack, Figma, CI/CD пайплайны и сотни сторонних инструментов через Atlassian Marketplace.</p>
+      <p style="margin-top: 16px;">У Redmine тоже есть интеграции, но они требуют большей настройки. Git-интеграция работает хорошо; для остального потребуются вебхуки или плагины сообщества.</p>
+      <p style="margin-top: 16px;">Победитель по интеграциям: <strong style="font-weight: 500;">Jira</strong>.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Что выбрать?</h2>
+      <p><strong style="font-weight: 500;">Выбирайте Redmine, если:</strong></p>
+      <ul style="margin: 12px 0 0 20px; line-height: 2;">
+        <li>Бюджет имеет значение</li>
+        <li>Вам важен полный контроль над данными</li>
+        <li>Команда техническая и готова работать с self-hosted инструментами</li>
+        <li>Нужна глубокая кастомизация рабочих процессов</li>
+      </ul>
+      <p style="margin-top: 20px;"><strong style="font-weight: 500;">Выбирайте Jira, если:</strong></p>
+      <ul style="margin: 12px 0 0 20px; line-height: 2;">
+        <li>Вы уже в экосистеме Atlassian</li>
+        <li>Есть нетехнические участники которым нужен простой интерфейс</li>
+        <li>Нужна богатая аналитика и интеграции из коробки</li>
+        <li>Бюджет не является основным ограничением</li>
+      </ul>
+
+      <p style="margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--gray-100); color: var(--gray-600);">
+        Мы помогаем командам настраивать, мигрировать и кастомизировать Redmine. Если рассматриваете переход или нужна помощь с текущей установкой — <a href="/ru/#contact" style="color: var(--blue-600);">напишите нам</a>.
+      </p>
+
+    </div>
+  </div>
+</div>
