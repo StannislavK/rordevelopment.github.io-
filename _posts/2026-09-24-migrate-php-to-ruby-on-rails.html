@@ -1,0 +1,62 @@
+---
+layout: default
+lang: en
+title: "How to Migrate Your Project from PHP to Ruby on Rails"
+date: 2026-09-24
+description: Thinking about migrating from PHP to Ruby on Rails? Here's a practical guide covering when it makes sense, how to approach it, and what to expect during the process.
+---
+
+<div class="section">
+  <div class="container" style="max-width: 720px;">
+    <div style="margin-bottom: 40px;">
+      <span class="section-label">Blog</span>
+      <h1 style="font-size: 32px; font-weight: 300; color: var(--gray-900); margin: 12px 0; letter-spacing: -0.02em;">{{ page.title }}</h1>
+      <p style="color: var(--gray-400); font-size: 14px; font-family: var(--font-mono);">{{ page.date | date: "%B %d, %Y" }}</p>
+    </div>
+    <div style="font-size: 16px; line-height: 1.8; color: var(--gray-800);">
+
+      <p>PHP powers a huge portion of the web — but many teams eventually hit a wall with it. Tangled codebases, inconsistent conventions, and scaling headaches push companies to look for alternatives. Ruby on Rails is one of the most popular destinations.</p>
+
+      <p style="margin-top: 20px;">But migration is not a decision to take lightly. Here's how to think about it — and how to do it right.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">When does migration make sense?</h2>
+      <p>Not every PHP project needs to move to Rails. Migration makes sense when:</p>
+      <ul style="margin: 12px 0 0 20px; line-height: 2;">
+        <li>Your codebase has grown into an unmaintainable mess and refactoring won't fix it</li>
+        <li>You're rebuilding the product anyway — a migration is cheaper than patching old code</li>
+        <li>Your team already knows Rails or you're hiring Rails developers</li>
+        <li>You need better developer productivity and faster feature delivery</li>
+      </ul>
+      <p style="margin-top: 16px;">If your PHP app is working fine and the team is productive — don't migrate just because Rails sounds better. The best technology is the one your team executes well.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">The strangler fig approach</h2>
+      <p>The worst way to migrate is a "big bang" rewrite — stopping everything to rebuild from scratch. This almost always takes longer than expected, introduces regressions, and demoralises the team.</p>
+      <p style="margin-top: 16px;">The better approach is the <strong style="font-weight: 500;">strangler fig pattern</strong>: run both systems in parallel and gradually move functionality from PHP to Rails, one piece at a time. A reverse proxy (nginx) routes traffic to either system based on the URL.</p>
+      <p style="margin-top: 16px;">This way, you ship value continuously while the migration happens in the background.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Step-by-step migration process</h2>
+      <ul style="margin: 12px 0 0 20px; line-height: 2;">
+        <li><strong style="font-weight: 500;">Audit the PHP codebase</strong> — document what exists, what's used, what's dead code</li>
+        <li><strong style="font-weight: 500;">Map the data model</strong> — understand your database schema before writing a line of Rails code</li>
+        <li><strong style="font-weight: 500;">Set up the Rails app alongside PHP</strong> — share the same database initially</li>
+        <li><strong style="font-weight: 500;">Migrate by feature area</strong> — start with the least critical parts, validate, then move to core features</li>
+        <li><strong style="font-weight: 500;">Write tests as you go</strong> — Rails makes testing easy; use this to your advantage</li>
+        <li><strong style="font-weight: 500;">Decommission PHP gradually</strong> — only remove PHP routes once Rails handles them reliably</li>
+      </ul>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Common challenges</h2>
+      <p><strong style="font-weight: 500;">Legacy database schemas</strong> — PHP apps often have schemas that don't map cleanly to Rails conventions. Plan time to clean this up.</p>
+      <p style="margin-top: 16px;"><strong style="font-weight: 500;">Session and authentication</strong> — migrating users without forcing them to log out is tricky. Plan this early.</p>
+      <p style="margin-top: 16px;"><strong style="font-weight: 500;">Team learning curve</strong> — if your team knows PHP, Rails will feel unfamiliar at first. Budget time for ramp-up.</p>
+      <p style="margin-top: 16px;"><strong style="font-weight: 500;">Scope creep</strong> — migration is not the time to add new features. Keep it focused on moving existing functionality.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">How long does it take?</h2>
+      <p>A small PHP app (under 50 routes, simple data model) can be migrated in 2–3 months. A medium-sized product takes 6–12 months. Large enterprise systems with complex integrations can take 18–24 months — which is why the strangler fig approach is so important: you keep shipping while you migrate.</p>
+
+      <p style="margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--gray-100); color: var(--gray-600);">
+        We've helped teams migrate complex PHP applications to Ruby on Rails. If you're considering a migration — <a href="/en/#contact" style="color: var(--blue-600);">get in touch</a> and we'll help you plan the right approach.
+      </p>
+
+    </div>
+  </div>
+</div>
