@@ -1,0 +1,78 @@
+---
+layout: default
+lang: de
+title: "Fallstudie: Mobile Zahlungs-App für einen Kiewer Immobilienentwickler auf Ruby on Rails"
+date: 2026-07-01
+description: Wie wir eine mobile Anwendung für ein Kiewer Immobilienunternehmen mit mehreren Wohnhäusern entwickelt haben — integriert mit Buchhaltung, Zahlungen und Mieterservices.
+---
+
+<div class="section">
+  <div class="container" style="max-width: 720px;">
+    <div style="margin-bottom: 40px;">
+      <span class="section-label">Blog</span>
+      <h1 style="font-size: 32px; font-weight: 300; color: var(--gray-900); margin: 12px 0; letter-spacing: -0.02em;">{{ page.title }}</h1>
+      <p style="color: var(--gray-400); font-size: 14px; font-family: var(--font-mono);">{{ page.date | date: "%d.%m.%Y" }}</p>
+    </div>
+    <div style="font-size: 16px; line-height: 1.8; color: var(--gray-800);">
+
+      <p>Immobilienunternehmen die mehrere Wohngebäude verwalten stehen vor einem häufigen Problem: Mieter zahlen Nebenkosten und Servicegebühren über verschiedene Kanäle — Überweisungen, Bargeld, Drittanbieter-Apps — und die Buchhaltung muss alles manuell abstimmen. Das ist langsam, fehleranfällig und frustrierend für alle Beteiligten.</p>
+
+      <p style="margin-top: 20px;">Wir haben eine Lösung für einen Kiewer Immobilienentwickler entwickelt der mehrere mehrstöckige Wohngebäude besitzt und verwaltet. Das Ergebnis ist eine mobile Anwendung die alle Mieterzahlungen verarbeitet, direkt mit dem Buchhaltungssystem des Unternehmens verbunden ist und alle Beteiligten in Echtzeit informiert hält.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Der Kunde</h2>
+      <p>Ein Kiewer Immobilienentwickler mit einem Portfolio aus mehreren mehrstöckigen Wohngebäuden. Das Unternehmen verwaltet alles intern — Gebäudewartung, Nebenkostenabrechnung, Mieterkommunikation und Finanzberichterstattung. Mit Hunderten von Wohnungen in ihren Objekten war die manuelle Zahlungsverfolgung nicht mehr tragbar.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Die Herausforderung</h2>
+      <ul style="margin: 12px 0 0 20px; line-height: 2;">
+        <li>Mieter nutzten verschiedene Zahlungsmethoden — es gab keinen einheitlichen Kanal</li>
+        <li>Die Buchhaltung erhielt Zahlungen mit Verzögerungen und musste sie manuell zuordnen</li>
+        <li>Mieter hatten keine einfache Möglichkeit ihren Kontostand oder ihre Zahlungshistorie zu prüfen</li>
+        <li>Das Unternehmen hatte keinen Echtzeit-Überblick über Rückstände</li>
+        <li>Serviceanfragen wurden telefonisch ohne jegliches Tracking entgegengenommen</li>
+      </ul>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Was wir entwickelt haben</h2>
+      <p>Ein Ruby on Rails Backend mit mobilem Interface für Mieter und das Verwaltungsteam. Das System umfasst:</p>
+
+      <p style="margin-top: 20px;"><strong style="font-weight: 500;">Für Mieter:</strong></p>
+      <ul style="margin: 12px 0 0 20px; line-height: 2;">
+        <li>Aktuellen Kontostand, Abrechnungen und Zahlungshistorie für die eigene Wohnung einsehen</li>
+        <li>Nebenkosten und Servicegebühren direkt in der App bezahlen</li>
+        <li>Push-Benachrichtigungen für neue Abrechnungen und Zahlungsbestätigungen</li>
+        <li>Serviceanfragen einreichen und deren Status verfolgen</li>
+        <li>Gebäudeankündigungen und wichtige Mitteilungen abrufen</li>
+      </ul>
+
+      <p style="margin-top: 20px;"><strong style="font-weight: 500;">Für das Verwaltungsteam:</strong></p>
+      <ul style="margin: 12px 0 0 20px; line-height: 2;">
+        <li>Echtzeit-Dashboard mit Zahlungsstatus für alle Gebäude und Wohnungen</li>
+        <li>Automatischer Abgleich mit dem Buchhaltungssystem — kein manueller Aufwand mehr</li>
+        <li>Sofortiger Überblick über Rückstände und überfällige Konten</li>
+        <li>Werkzeuge zum Versenden gezielter Benachrichtigungen an bestimmte Gebäude oder Wohnungen</li>
+        <li>Verwaltung von Serviceanfragen mit Zuweisung und Statusverfolgung</li>
+      </ul>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Technologie-Stack</h2>
+      <p>Das gesamte System ist auf <strong style="font-weight: 500;">Ruby on Rails</strong> aufgebaut — sowohl das API-Backend als auch das Admin-Panel. Das mobile Interface ist eine Progressive Web App die von jedem Smartphone aus zugänglich ist ohne einen App Store-Download. Die Zahlungsabwicklung ist mit ukrainischen Zahlungsgateways integriert.</p>
+      <p style="margin-top: 16px;">Die Buchhaltungsintegration war der technisch komplexeste Teil des Projekts — wir haben eine Echtzeit-Synchronisationsschicht entwickelt die sicherstellt dass jede in der App getätigte Zahlung sofort in den Buchhaltungsunterlagen des Unternehmens erfasst wird.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Ergebnisse</h2>
+      <ul style="margin: 12px 0 0 20px; line-height: 2;">
+        <li>Zahlungseinzug in einem einzigen Kanal zentralisiert — Buchhaltungsabstimmungszeit drastisch reduziert</li>
+        <li>Mieter haben die App schnell angenommen — der Zahlungsvorgang ist einfach und dauert unter einer Minute</li>
+        <li>Das Verwaltungsteam hat Echtzeit-Einblick in den finanziellen Stand jedes Gebäudes</li>
+        <li>Serviceanfragen werden jetzt von der Einreichung bis zur Lösung verfolgt — nichts geht verloren</li>
+        <li>Das System skaliert einfach wenn das Unternehmen neue Gebäude hinzufügt</li>
+      </ul>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Warum Ruby on Rails die richtige Wahl war</h2>
+      <p>Rails ermöglichte es uns schnell voranzukommen ohne Zuverlässigkeit zu opfern. Buchhaltungsintegration, Zahlungsabwicklung, Benachrichtigungssystem und Admin-Dashboard — alles wurde termingerecht entwickelt und geliefert. Die Codebasis ist sauber und wartbar — das Team des Kunden kann Änderungen und neue Funktionen anfordern ohne jedes Mal einen langen Discovery-Prozess zu durchlaufen.</p>
+      <p style="margin-top: 16px;">Für eine geschäftskritische Anwendung die mit echtem Geld arbeitet war die Reife von Rails und die Verfügbarkeit bewährter Gems für Zahlungen, Hintergrundjobs und API-Entwicklung die offensichtliche Wahl.</p>
+
+      <p style="margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--gray-100); color: var(--gray-600);">
+        Bauen Sie etwas Ähnliches? Ein Mieterportal, ein Zahlungssystem oder eine individuelle Verwaltungsplattform — <a href="/de/#contact" style="color: var(--blue-600);">kontaktieren Sie uns</a> und lassen Sie uns über Ihr Projekt sprechen.
+      </p>
+
+    </div>
+  </div>
+</div>

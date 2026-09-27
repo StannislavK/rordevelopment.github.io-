@@ -1,0 +1,78 @@
+---
+layout: default
+lang: en
+title: "Case Study: Mobile Payment App for a Kyiv Real Estate Developer Built on Ruby on Rails"
+date: 2026-07-01
+description: How we built a mobile application for a Kyiv-based real estate company managing multiple residential buildings — integrated with accounting, payments, and tenant services.
+---
+
+<div class="section">
+  <div class="container" style="max-width: 720px;">
+    <div style="margin-bottom: 40px;">
+      <span class="section-label">Blog</span>
+      <h1 style="font-size: 32px; font-weight: 300; color: var(--gray-900); margin: 12px 0; letter-spacing: -0.02em;">{{ page.title }}</h1>
+      <p style="color: var(--gray-400); font-size: 14px; font-family: var(--font-mono);">{{ page.date | date: "%B %d, %Y" }}</p>
+    </div>
+    <div style="font-size: 16px; line-height: 1.8; color: var(--gray-800);">
+
+      <p>Real estate companies managing multiple residential buildings face a common problem: residents pay utility bills and service fees through different channels — bank transfers, cash, third-party apps — and the accounting team has to reconcile everything manually. It's slow, error-prone, and frustrating for everyone involved.</p>
+
+      <p style="margin-top: 20px;">We built a solution for a Kyiv-based real estate developer that owns and manages several multi-storey residential buildings. The result is a mobile application that handles all resident payments, connects directly to the company's accounting system, and keeps every stakeholder informed in real time.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">The client</h2>
+      <p>A Kyiv real estate development company with a portfolio of multiple multi-storey residential buildings. The company manages everything in-house — building maintenance, utility billing, resident communications, and financial reporting. With hundreds of apartments across their properties, manual payment tracking was no longer sustainable.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">The challenge</h2>
+      <ul style="margin: 12px 0 0 20px; line-height: 2;">
+        <li>Residents used different payment methods — there was no single channel</li>
+        <li>Accounting received payments with delays and had to match them manually</li>
+        <li>Residents had no easy way to check their balance or payment history</li>
+        <li>The company had no real-time visibility into which apartments were in arrears</li>
+        <li>Service requests (maintenance, repairs) were handled via phone calls with no tracking</li>
+      </ul>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">What we built</h2>
+      <p>A Ruby on Rails backend with a mobile-friendly interface that serves both residents and the management team. The system covers:</p>
+
+      <p style="margin-top: 20px;"><strong style="font-weight: 500;">For residents:</strong></p>
+      <ul style="margin: 12px 0 0 20px; line-height: 2;">
+        <li>View current balance, charges, and payment history for their apartment</li>
+        <li>Pay utility bills and service fees directly in the app</li>
+        <li>Receive push notifications for new charges and payment confirmations</li>
+        <li>Submit maintenance requests and track their status</li>
+        <li>Access building announcements and important notices</li>
+      </ul>
+
+      <p style="margin-top: 20px;"><strong style="font-weight: 500;">For the management team:</strong></p>
+      <ul style="margin: 12px 0 0 20px; line-height: 2;">
+        <li>Real-time dashboard showing payment status across all buildings and apartments</li>
+        <li>Automatic reconciliation with the accounting system — no manual matching</li>
+        <li>Instant visibility into arrears and overdue accounts</li>
+        <li>Tools for sending targeted notifications to specific buildings or apartments</li>
+        <li>Maintenance request management with assignment and status tracking</li>
+      </ul>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Technology stack</h2>
+      <p>The entire system is built on <strong style="font-weight: 500;">Ruby on Rails</strong> — both the API backend and the admin panel. The mobile interface is a progressive web app accessible from any smartphone without requiring an App Store download. Payment processing is integrated with Ukrainian payment gateways.</p>
+      <p style="margin-top: 16px;">The accounting integration was the most technically complex part of the project — we built a real-time sync layer that ensures every payment made in the app is immediately reflected in the company's accounting records with no manual intervention.</p>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Results</h2>
+      <ul style="margin: 12px 0 0 20px; line-height: 2;">
+        <li>Payment collection centralised into a single channel — accounting reconciliation time dropped dramatically</li>
+        <li>Residents adopted the app quickly — the payment flow is simple and takes under a minute</li>
+        <li>The management team has real-time visibility into the financial state of every building</li>
+        <li>Maintenance requests are now tracked from submission to resolution — nothing falls through the cracks</li>
+        <li>The system scales easily as the company adds new buildings to their portfolio</li>
+      </ul>
+
+      <h2 style="font-size: 22px; font-weight: 400; margin: 36px 0 12px; color: var(--gray-900);">Why Ruby on Rails was the right choice</h2>
+      <p>Rails let us move fast without sacrificing reliability. The accounting integration, payment processing, notification system, and admin dashboard were all built and delivered on schedule. The codebase is clean and maintainable — the client's team can request changes and new features without a lengthy discovery process each time.</p>
+      <p style="margin-top: 16px;">For a business-critical application that handles real money, Rails' maturity and the availability of battle-tested gems for payments, background jobs, and API development made it the obvious choice.</p>
+
+      <p style="margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--gray-100); color: var(--gray-600);">
+        Building something similar? Whether it's a resident portal, a payment system, or a custom management platform — <a href="/en/#contact" style="color: var(--blue-600);">get in touch</a> and let's talk about your project.
+      </p>
+
+    </div>
+  </div>
+</div>
